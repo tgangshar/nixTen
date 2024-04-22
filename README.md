@@ -1,29 +1,28 @@
 # nixTen
 Storage of Nix Declaratives
+<An over top use of md spaces>
 # FileStructure Preview
-'''
-nixos
-|   flake.lock   #nixstore
-|   flake.nix    #nix config
-|   update.sh    #updates git repo
-|   newUser.sh   #Creates a new user in hosts
-└───home-manager #Program configs
-|   |  default.nix #refrence for folder
-|   └───
-|
-└───hosts
-    └───default # users
-    |   |  configuration.nix  #general enviornment and admin configs
-    |   |  hardware-configuration.nix
-    |   |  home.nix  #packages and programs
-    |   |  todo.md
-    |
-    └───<new user> # User customization
-        |  configuration.nix
-        |  hardware-configuration.nix
-        |  home.nix
-'''
+## nixos
+&nbsp;|&nbsp;&nbsp;&nbsp;flake.lock&nbsp;&nbsp;#nixstore <br>
+&nbsp;|&nbsp;&nbsp;&nbsp;flake.nix&nbsp;&nbsp;#nix config <br>
+&nbsp;|&nbsp;&nbsp;&nbsp;update.sh&nbsp;&nbsp;#updates git repo <br>
+&nbsp;|&nbsp;&nbsp;&nbsp;newUser.sh&nbsp;&nbsp;#Creates a new user in hosts <br>
+└───home-manager #Program configs <br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;default.nix&nbsp;&nbsp;#refrence for folder <br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;└───{rest} <br>
+&nbsp;| <br>
+└───hosts <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└───default #users <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;configuration.nix &nbsp;&nbsp; #general enviornment and admin configs <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;hardware-configuration.nix <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;home.nix &nbsp;&nbsp; #packages and programs <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;todo.md <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└───{new user} &nbsp;&nbsp;# User customization <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;configuration.nix <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;hardware-configuration.nix <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;home.nix <br>
 # Refrences
-Flake.nix -> hosts/default/configuration.nix -> hardware-configuration.nix
-                                             -> home-manager default   ->  home.nix  -> .../homemangaer/default.nix -> entire home manager file structure
-          -> hosts/<otherUsers>
+Flake.nix ->&nbsp; hosts/default/configuration.nix ->&nbsp;hardware-configuration.nix <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> home-manager default -> home.nix -> .../homemangaer/default.nix -> {rest} <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;->&nbsp; hosts/{otherUsers}
