@@ -68,6 +68,7 @@
     cargo
     dust
     firefox
+    #firefox-devedition
     fzf
     git
     github-desktop
@@ -75,8 +76,11 @@
     neovim
     nerdfonts
     ninja
+    obsidian
     openssl
     spotify
+    tree
+    gtree
     tldr
     unzip
     wget

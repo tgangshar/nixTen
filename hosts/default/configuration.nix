@@ -123,6 +123,10 @@
     alacritty
     sl
     poetry
+    gnumake42
+    go
+    tailwindcss
+    templ
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
